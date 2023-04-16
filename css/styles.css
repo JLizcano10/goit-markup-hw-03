@@ -1,0 +1,411 @@
+/* Variables que mas se repiten */
+:root {
+  --font-family-roboto: "Roboto", sans-serif;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --letter-spacing: 0.03em;
+  --color-logo-black: #000000;
+  --color-black: #212121;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --color-blue-active: #188ce8;
+  --color-gray: #757575;
+  --color-hero: #2f303a;
+  --color-light-gray: #e5e5e5;
+  --color-back-white: #f5f4fa;
+  --color-gray-border: #ececec;
+  --color-white-border: #eeeeee;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-roboto);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-14);
+  letter-spacing: var(--letter-spacing);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  /* es o no necesario el ancho? */
+  width: 1600px;
+}
+header {
+  border-bottom: 1px solid var(--color-gray-border);
+}
+
+nav .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.menu {
+  margin-left: 93px;
+  margin-right: 331px;
+}
+
+.menu-link,
+.contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+h1,
+h2,
+.team-name,
+.team-role {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+button {
+  border: none;
+}
+
+.hero-button {
+  padding: 10px 32px;
+}
+
+.content,
+.services,
+.pictures,
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+footer {
+  /* width: 100%; */
+  height: 250px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer .logo {
+  margin-bottom: 9px;
+}
+
+footer address {
+  width: 231px;
+
+  margin-top: 9px;
+  padding-bottom: 60px;
+}
+
+.buttons-list {
+  margin-bottom: 34px;
+}
+
+.box-item {
+  width: 370px;
+  /* max-height: 404px; */
+  margin-bottom: 30px;
+}
+
+.box-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.box-item:nth-child(n + 7) {
+  margin-bottom: 0px;
+}
+
+.box-foot {
+  padding: 20px 24px;
+  border-right: 1px solid var(--color-white-border);
+  border-bottom: 1px solid var(--color-white-border);
+  border-left: 1px solid var(--color-white-border);
+}
+
+ul li,
+a {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+/* --------------- Seccion flex-box ---------------------- */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* display: flex; */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav,
+.menu,
+.contact,
+.services-list,
+.pictures-list,
+.team-list,
+.buttons-list,
+.boxes-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons-list,
+.boxes-list {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------------ */
+
+.service-item,
+.team-member {
+  width: 270px;
+}
+
+.hero-title,
+.team-member img,
+.team-role {
+  margin-bottom: 30px;
+}
+
+.service-item:not(:first-child),
+.picture-item:nth-child(2),
+.team-member:not(:first-child) {
+  margin-left: 30px;
+}
+
+.picture-item:last-child {
+  margin-left: 23px;
+}
+
+nav,
+.menu-link,
+.menu-item {
+  align-items: center;
+}
+
+.menu-item:not(:last-child),
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.hero {
+  /* width: 100%; */
+  height: 600px;
+  text-align: center;
+  padding: 200px 452px;
+}
+
+/* .buttons-list {
+  display: flex;
+} */
+
+.logo {
+  width: 145px;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+}
+
+.logo,
+.menu .menu-item .fixed-link {
+  color: var(--color-blue);
+}
+
+.studio-head {
+  color: var(--color-logo-black);
+}
+
+.title-invisible {
+  display: none;
+}
+
+.service-title {
+  text-transform: uppercase;
+}
+
+.service-title,
+.team-name {
+  margin-bottom: 10px;
+}
+
+.hero,
+footer {
+  background-color: var(--color-hero);
+}
+
+.team,
+.button-item {
+  background-color: var(--color-back-white);
+}
+
+.team-member,
+.box-item {
+  background-color: var(--color-white);
+}
+
+.menu-link,
+.box-title {
+  color: var(--color-black);
+}
+/* SECCION HOVER Y FOCUS */
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--color-blue-active);
+}
+
+.hero-button,
+.button-item:hover,
+.button-item:focus {
+  background-color: var(--color-blue);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-blue);
+}
+
+.button-item:hover,
+.button-item:focus {
+  color: var(--color-white);
+}
+/* ------------------------------ */
+
+.hero-button,
+.button-item {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.studio-foot,
+.hero-title,
+.hero-button,
+.address-link {
+  color: var(--color-white);
+}
+
+.contact-link,
+.title-gray,
+.service-text,
+.team-role,
+.box-text {
+  color: var(--color-gray);
+}
+
+.team-name,
+.team-role,
+.box-text,
+.hero-button,
+.button-item {
+  font-size: var(--font-size-16);
+}
+
+.picture-title,
+.team-title {
+  font-size: 36px;
+}
+
+.service-text,
+.team-role,
+.address-link,
+.box-text {
+  font-weight: var(--font-weight-400);
+}
+
+.menu-link,
+.contact-link,
+.team-name,
+.button-item {
+  font-weight: var(--font-weight-500);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+}
+
+.box-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  margin-bottom: 4px;
+}
+
+.address-link {
+  font-style: normal;
+}
+
+/* letter-spacing asi? */
+.menu-link,
+.contact-link {
+  letter-spacing: 0.02em;
+}
+
+.hero-title,
+.hero-button,
+.box-title {
+  letter-spacing: 0.06em;
+}
+
+.menu-link,
+.contact-link,
+.service-title {
+  line-height: 1.1;
+}
+
+.logo,
+.picture-title,
+.team-title,
+.team-name,
+.team-role {
+  line-height: 1.2;
+}
+
+.button-item {
+  line-height: 1.6;
+  padding: 6px 22px;
+  margin-right: 8px;
+}
+
+.service-text,
+.address-link,
+.address-contact {
+  line-height: 1.7;
+}
+
+.hero-button,
+.box-text {
+  line-height: 1.9;
+}
+/* Preguntar propiedades inherit */
+.hero-button,
+.button-item {
+  font-family: inherit;
+  /* font-weight: inherit; */
+}
+
+.address-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
