@@ -94,14 +94,8 @@ footer {
   padding-bottom: 60px;
 }
 
-footer .logo {
-  margin-bottom: 9px;
-}
-
 footer address {
   width: 231px;
-
-  margin-top: 9px;
   padding-bottom: 60px;
 }
 
@@ -423,4 +417,9 @@ footer {
 
 .hero-container {
   text-align: center;
+}
+
+footer .logo,
+address li:not(:last-child) {
+  margin-bottom: 9px;
 }
