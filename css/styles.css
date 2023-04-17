@@ -123,7 +123,8 @@ footer address {
 }
 
 ul li,
-.logo {
+.logo,
+a {
   display: block;
   list-style: none;
   text-decoration: none;
