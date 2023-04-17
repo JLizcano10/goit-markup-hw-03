@@ -83,6 +83,10 @@ button {
   padding: 94px 0;
 }
 
+.pictures {
+  padding-top: 0;
+}
+
 footer {
   /* width: 100%; */
   height: 250px;
