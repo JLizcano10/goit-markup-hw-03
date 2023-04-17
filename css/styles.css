@@ -134,9 +134,8 @@ img {
 /* --------------- Seccion flex-box ---------------------- */
 
 .container {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
