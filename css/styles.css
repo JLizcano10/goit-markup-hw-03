@@ -79,10 +79,7 @@ button {
   padding: 10px 32px;
 }
 
-.content,
-.services,
-.pictures,
-.team {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
