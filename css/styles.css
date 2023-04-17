@@ -62,7 +62,6 @@ nav .logo {
 }
 
 h2,
-/* .hero-title, */
 .team-name,
 .team-role {
   text-align: center;
@@ -135,7 +134,7 @@ img {
   margin: 0;
   padding: 0;
 }
-/* --------------- Seccion flex-box ---------------------- */
+/* --------------- SECCION FLEXBOX ---------------------- */
 
 .container {
   width: 1200px;
@@ -209,10 +208,6 @@ nav,
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
-/* .buttons-list {
-  display: flex;
-} */
 
 .logo {
   width: 145px;
@@ -358,7 +353,6 @@ footer {
   font-style: normal;
 }
 
-/* letter-spacing asi? */
 .menu-link,
 .contact-link {
   letter-spacing: 0.02em;
@@ -410,8 +404,6 @@ footer {
 .address-contact {
   color: rgba(255, 255, 255, 0.6);
 }
-
-/* posible solucion para la caja basket mas alta */
 
 .hero-container {
   text-align: center;
